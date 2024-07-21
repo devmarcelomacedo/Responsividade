@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+body {
+    
+}
+/* 
+320px - 480px: dispositivos móveis.
+481px - 768px: Ipads, Tablets.
+769px - 1024px: Telas pequenas leptops.
+*/
+
+@media screen and (max-width:480px) {
+    .header {
+        background-color: #d3d3d3;
+        padding: 10px;
+    }
+    .logo {
+        text-align: center;
+    }
+    .menu {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .menu a {
+        color: #fff;
+        background-color: #d2691e;
+        display: block;
+        margin-top: 5px;
+        line-height: 40px;
+    }
+}
+@media screen and (min-width: 481px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #535250;
+        height: 100px;
+        padding: 20px;
+    }
+    
+    .menu, ul, li, a  {
+       display: inline;
+       margin: 10px;
+       color: #fff;
+    }
+    
+}
